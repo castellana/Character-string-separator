@@ -28,14 +28,14 @@ const trennen = () => {
     result2.innerHTML ="" //
     let position = inputKette.value.indexOf(trennungsPosition.value)
     if (position === -1) {
-        result1.innerHTML = "Der gesuchte String ist nicht vorhanden"
+        result1.innerHTML += "Der gesuchte String ist nicht vorhanden"
     } else {
         if (davor.checked) {
-        result1.innerHTML = inputKette.value.slice(0, position)
-        result2.innerHTML = inputKette.value.slice(position)
+        result1.innerHTML += inputKette.value.slice(0, position)
+        result2.innerHTML += inputKette.value.slice(position)
     } else {
-        result1.innerHTML = inputKette.value.slice(0, position + trennungsPosition.value.length)   //aquí cortamos no sólo hasta el final de position, sino hasta la longitud de la palabra que ha introducido la persona (longitud de la palabra en el segundo inputsfield). 
-        result2.innerHTML = inputKette.value.slice(position + trennungsPosition.value.length)
+        result1.innerHTML += inputKette.value.slice(0, position + trennungsPosition.value.length)   //aquí cortamos no sólo hasta el final de position, sino hasta la longitud de la palabra que ha introducido la persona (longitud de la palabra en el segundo inputsfield). 
+        result2.innerHTML += inputKette.value.slice(position + trennungsPosition.value.length)
     }
 
 }

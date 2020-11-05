@@ -6,20 +6,23 @@ body {
 * {
     font-family: 'PT Sans', sans-serif;
 }
-h1 {
-    font-size: 1.5rem;
-}
 header {
-    height: 5vh;
-    background: saddleBrown;
+    height: 8vh;
+    background: Maroon;
     width: 80%;
-    margin: 0 auto;
+    margin: 4vh auto 0;
     text-align: center;
 }
+h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    padding-top: 2vh;
+}
+
 main {
     width: 80%;
     height: 80vh;
-    background: rgba(250, 240, 230, 0.431);
+    background: rgba(250, 240, 230, 0.767);
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -30,6 +33,7 @@ main {
 form {
     display: flex;
     flex-direction: column;
+    height: 40vh;
 }
 input[type=text]{
     width: 98%;
@@ -45,5 +49,75 @@ button {
     font-size: 1.5rem;
 }
 button:hover {
-    background: rgba(250, 240, 230, 0.431);
+    background: rgba(250, 240, 230, 0.575);
+}
+span {
+    margin-left: 10%;
+    background: lightgrey;
+    color: red;
+}
+h2 {
+    margin-top: 9vh;
+    margin-bottom: 1vh;
+}
+p {
+    font-size: 1.3rem;
+}
+@media only screen and (min-width: 320px) {
+    main {
+      background-color:  #dfbfbf;
+    }
+    header, main {
+        width: 90%;
+    }
+    h1 {
+        font-size: 1.1rem;
+        padding-top: 1vh;
+    }
+    label {
+        font-size: 1rem;;
+    }
+    h2 {
+        margin-top: 2vh;
+    }
+}
+@media only screen and (min-width: 600px) {
+    main {
+      background-color: lightblue;
+    }
+    header, main {
+        width: 70%;
+    }
+    h1 {
+        font-size: 2rem;
+        padding-top: 1vh;
+    }
+    label {
+        font-size: 1.5rem;;
+    }
+    h2 {
+        margin-top: 7vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+      background-color: ivory;
+    }
+    header, main {
+        width: 500px;
+    }
+    h1 {
+        font-size: 2rem;
+        padding-top: 1vh;
+    }
+    label {
+        font-size: 1.5rem;;
+    }
+    h2 {
+        margin-top: 7vh;
+    }
+    p {
+        margin: 0;
+    }
 }
