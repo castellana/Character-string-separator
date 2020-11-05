@@ -3,34 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zeichenkettentrennungsmaschine</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+    </style>
 </head>
 <body>
-    <h1>Zeichenkettentrennungsmaschine</h1>
-    <form action="">
-        <label for="Zu trennende Zeichenkette">Zu trennende Zeichenkette</label>
-        <input type="text" name="" id="inputKette">
+    <header>
+        <h1>Character string separator</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form action="">
+                <div class="input-group1">
+                    <label for="">Word or sentence to be cut</label>
+                    <input type="text" name="" id="inputKette">
+                </div>
+                <div class="input-group2">
+                    <label for="position">Cutting letter or word</label>
+                    <input type="text" name="" id="trennungsPosition">
+                </div>
+                <div class="radio-group1">
+                    <!--radio buttons-->
+                    <input type="radio" id="davor" name="vorNach" value="" checked>
+                    <label for="">separate before</label>
+                </div>
+                <div class="radio-group2">
+                    <input type="radio" id="danach" name="vorNach" value="">
+                    <label for="">separate after</label>
+                </div>
+            </form>
+            <button onclick="trennen()">Separate</button>
 
-        <label for="position">Zu trennende Zeichenkette</label>
-        <input type="text" name="" id="trennungsPosition">
-
-        <!--radio buttons-->
-        <input type="radio" id="davor" name="vorNach" value="" checked>
-        <label for="">davor trennen</label>
-
-        <input type="radio" id="danach" name="vorNach" value="">
-        <label for="">danach trennen</label>
-    </form>
-        <button onclick="trennen()">Klick mich</button>
-
-        <h2>Ausgabe</h2>
-        <div>
-            <div id="result1""></div>
-            <div id="result2""></div>
+            <h2>Result</h2>
+            <div>
+                <div id="result1">Front section</div>
+                <div id="result2">Back section</div>
+            </div>
+            </form>
         </div>
-
-
-   </form>
+    </main>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
